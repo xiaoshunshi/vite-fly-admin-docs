@@ -123,7 +123,17 @@ function sidebarHtml() {
             {
                 text: 'eslint配置',
                 link: '/html/eslint'
-            }]
+            },
+            {
+                text: 'GitCommit配置',
+                link: '/html/git-commit'
+            },
+            {
+                text: 'GitPage配置',
+                link: '/html/git-page'
+            },
+            // 
+        ]
         }
     ]
 }
