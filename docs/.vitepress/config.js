@@ -37,7 +37,10 @@ export default {
             icon: 'github',
             link: 'https://github.com/xiaoshunshi/vite-fly-admin-docs'
         }],
-
+        editLink: {
+            pattern: 'https://github.com/xiaoshunshi/vite-fly-admin-docs/tree/main/docs/:path',
+            text: '编辑链接'
+        },
         // 底部版权
         footer: {
             message: '在 MIT 许可下发布。',
@@ -71,7 +74,7 @@ function nav() {
                 // You may also omit the title.
                 items: [{
                         text: '前端',
-                        link: '/html/html',
+                        link: '/html/vite',
                         activeMatch: '/html/',
                     },
                     {
@@ -109,27 +112,23 @@ function sidebarGuide() {
         ]
     }]
 }
-export function sidebarHtml() {
+function sidebarHtml() {
     return [{
-            text: '前端',
+            text: '项目配置',
             collapsible: true,
             items: [{
-                text: 'Html',
-                link: '/html/html'
-            }]
-        },
-        {
-            text: 'vue3',
-            collapsible: true,
-            items: [{
-                text: 'vite的安装',
+                text: 'vite.config.ts配置',
                 link: '/html/vite'
+            },
+            {
+                text: 'eslint配置',
+                link: '/html/eslint'
             }]
         }
     ]
 }
 
-export function sidebarNode() {
+function sidebarNode() {
     return [{
         text: '后端',
         collapsible: true,
@@ -140,7 +139,7 @@ export function sidebarNode() {
     }]
 }
 
-export function sidebarSql() {
+function sidebarSql() {
     return [{
         text: '数据库',
         collapsible: true,
