@@ -23,11 +23,84 @@ export default {
         lastUpdatedText: '最后修改时间',
         // 文档列表显示
         outlineTitle: '目录',
+        // 头部指南配置
+        nav: nav(),
+        // 侧边栏配置
+        sidebar: {
+            '/guide/': sidebarGuide(),
+            // '/config/': sidebarConfig()
+        },
         // 头部导航的图标链接
         socialLinks: [{
             icon: 'github',
-            link: 'https://github.com/xiaoshunshi/vitepress-docs'
+            link: 'https://github.com/xiaoshunshi/vite-fly-admin-docs'
         }],
+
+        // 底部版权
+        footer: {
+            message: '在 MIT 许可下发布。',
+            copyright: '版权所有 © 2022-至今 Xiao Shunshi'
+        },
+        // 广告
+        carbonAds: {
+            code: 'CEBDT27Y',
+            placement: 'vuejsorg'
+        },
+        // 搜索，需要申请algolia，暂时没有实现
+        algolia: {
+            appId: '8J64VVRP8K',
+            apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
+            indexName: 'vitepress'
+        },
     }
 
-  }
+}
+
+function nav() {
+    return [{
+            text: '指南',
+            link: '/guide/what-is-vite-fly-admin',
+            activeMatch: '/guide/'
+        },
+        {
+            text: '教程',
+            items: [{
+                // You may also omit the title.
+                items: [{
+                        text: '前端',
+                        link: '/html/html',
+                        activeMatch: '/html/',
+                    },
+                    {
+                        text: '后端',
+                        link: '/node/node'
+                    },
+                    {
+                        text: '数据库',
+                        link: '/sql/mysql'
+                    }
+                ]
+            }]
+        }
+    ]
+}
+
+function sidebarGuide() {
+    return [{
+        text: '指南',
+        // 开启折叠
+        collapsible: true,
+        items: [{
+                text: '简介',
+                link: '/guide/what-is-vite-fly-admin'
+            }, {
+                text: '安装',
+                link: '/guide/installation'
+            },
+            {
+                text: '快速开始',
+                link: '/guide/quieStart'
+            }
+        ]
+    }]
+}
