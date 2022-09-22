@@ -163,6 +163,10 @@ function sidebarHtml() {
                     text: "element-plus的使用",
                     link: "/html/element-plus",
                 },
+                {
+                    text: "vue-router的使用",
+                    link: "/html/vue-router",
+                },
                
             ],
         },
