@@ -28,7 +28,9 @@ export default {
         // 侧边栏配置
         sidebar: {
             '/guide/': sidebarGuide(),
-            // '/config/': sidebarConfig()
+            '/html/': sidebarHtml(),
+            '/node/': sidebarNode(),
+            '/sql/': sidebarSql()
         },
         // 头部导航的图标链接
         socialLinks: [{
@@ -64,6 +66,7 @@ function nav() {
         },
         {
             text: '教程',
+            // activeMatch: '/html/',
             items: [{
                 // You may also omit the title.
                 items: [{
@@ -73,11 +76,13 @@ function nav() {
                     },
                     {
                         text: '后端',
-                        link: '/node/node'
+                        link: '/node/node',
+                        activeMatch: '/node/',
                     },
                     {
                         text: '数据库',
-                        link: '/sql/mysql'
+                        link: '/sql/mysql',
+                        activeMatch: '/sql/',
                     }
                 ]
             }]
@@ -102,5 +107,46 @@ function sidebarGuide() {
                 link: '/guide/quieStart'
             }
         ]
+    }]
+}
+export function sidebarHtml() {
+    return [{
+            text: '前端',
+            collapsible: true,
+            items: [{
+                text: 'Html',
+                link: '/html/html'
+            }]
+        },
+        {
+            text: 'vue3',
+            collapsible: true,
+            items: [{
+                text: 'vite的安装',
+                link: '/html/vite'
+            }]
+        }
+    ]
+}
+
+export function sidebarNode() {
+    return [{
+        text: '后端',
+        collapsible: true,
+        items: [{
+            text: 'Node',
+            link: '/node/node'
+        }]
+    }]
+}
+
+export function sidebarSql() {
+    return [{
+        text: '数据库',
+        collapsible: true,
+        items: [{
+            text: 'mysql',
+            link: '/sql/mysql'
+        }]
     }]
 }
