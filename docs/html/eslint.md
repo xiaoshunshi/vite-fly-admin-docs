@@ -450,3 +450,14 @@
 - 在 vscode 编辑器扩展中安装 eslint 插件
 
 - 在 vscode 编辑器扩展中安装 Vue Language Features (Volar)
+
+## 配置忽略文件
+
+- 新建 .eslintignore 文件
+```
+*.d.ts
+package.json
+src/assets
+node_modules
+public
+```

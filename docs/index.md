@@ -14,7 +14,7 @@ hero:
       link: /guide/installation
     - theme: alt
       text: View on GitHub
-      link: https://github.com/xiaoshunshi/vite-fly-admin-docs
+      link: https://github.com/xiaoshunshi/vite-fly-admin-again
 features:
   - icon: ⚡️
     title: 前端
