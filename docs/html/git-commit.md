@@ -126,4 +126,11 @@
   //   chore：不属于以上类型的其他类型
   ```
 
+:::warning
+ mac下
+ 拉取代码后执行
+ chmod 700 .husky/* 
+ 否则commit不生效
+:::
+
 - 移除package.json中的type：‘module’
