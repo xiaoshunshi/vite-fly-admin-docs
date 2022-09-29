@@ -67,7 +67,9 @@ jobs:
 ## 开启gitpages，配置actions 的key
 
 - 进入项目中，在settings中 secrets -->Actions--> 添加第一步生成的key，名字必须和脚本的一致**ACCESS_TOKNE**
-- 在Pages中，分支选择gh-pages，root，然后就可以访问自己的githubpages
+- 在Pages中，分支选择gh-pages，root
+- 更改文件内容，执行一个git push ，然后就可以访问自己的githubpages
+
 
 
 
