@@ -3,7 +3,7 @@ export default {
     title: "Vite-fly-admin",
     description: "Just playing around.",
     // 打包的基础路径
-    base: "/",
+    base: '/vite-fly-admin-docs/',
     // 设置是否显示切换主题，默认为true
     appearance: false,
     // 设置网页ico图标

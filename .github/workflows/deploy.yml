@@ -13,13 +13,13 @@ jobs:
     # 缓存依赖
 
 
-    - name: Cache dependencies
-      uses: actions/cache@v1
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}--node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys:  |
-          ${{ runner.os }}--node-
+    # - name: Cache dependencies
+    #   uses: actions/cache@v1
+    #   with:
+    #     path: ~/.npm
+    #     key: ${{ runner.os }}--node-${{ hashFiles('**/package-lock.json') }}
+    #     restore-keys:  |
+    #       ${{ runner.os }}--node-
     # 安装依赖
     - run: npm ci
 
