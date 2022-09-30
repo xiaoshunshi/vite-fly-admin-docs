@@ -156,7 +156,7 @@ function sidebarHtml() {
             ],
         },
         {
-            text: "生产依赖",
+            text: "开发功能",
             collapsible: true,
             items: [
                 {
@@ -166,6 +166,10 @@ function sidebarHtml() {
                 {
                     text: "vue-router的使用",
                     link: "/html/vue-router",
+                },
+                {
+                    text: "图标的使用",
+                    link: "/html/vue-svg",
                 },
                
             ],
